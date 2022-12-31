@@ -7,4 +7,4 @@ RUN chmod 777 /app
 RUN apt -qq update && apt -qq install -y git ffmpeg
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-CMD ["python3","-u","muxbot.py"]
+CMD ["bash","start.sh"]
