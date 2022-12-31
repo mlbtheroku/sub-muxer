@@ -31,7 +31,7 @@ async def help_user(bot, update):
 
         await bot.send_message(
             update.chat.id,
-            Chat.ALLOWED_USERS,
+            Chat.NO_AUTH_USER,
             reply_to_message_id = update.message_id
         )
 
@@ -41,7 +41,7 @@ async def start(bot, update):
     if str(update.from_user.id) not in Config.ALLOWED_USERS or 'all' in Config.ALLOWED_USERS:
         return await bot.send_message(
             update.chat.id,
-            Chat.ALLOWED_USERS,
+            Chat.NO_AUTH_USER,
             reply_to_message_id = update.message_id
         )
 
