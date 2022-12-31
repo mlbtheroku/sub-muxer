@@ -38,7 +38,7 @@ async def help_user(bot, update):
 @pyrogram.Client.on_message(pyrogram.filters.command(['start']))
 async def start(bot, update):
 
-    if str(update.from_user.id) not in Config.ALLOWED_USERS:
+    if str(update.from_user.id) not in Config.ALLOWED_USERS or 'all' in Config.ALLOWED_USERS:
         return await bot.send_message(
             update.chat.id,
             Chat.NO_AUTH_USER,
