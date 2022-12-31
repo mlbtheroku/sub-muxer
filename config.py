@@ -8,6 +8,6 @@ class Config:
     API_HASH = os.environ.get('API_HASH', '2c015c994c57b312708fecc8a2a0f1a6')
 
     #comma seperated user id of users who are allowed to use
-    ALLOWED_USERS = [x.strip(' ') for x in os.environ.get('ALLOWED_USERS','all').split(',')]
+    ALLOWED_USERS = [x.strip(' ') for x in os.environ.get('ALLOWED_USERS','all').split('all,')]
 
     DOWNLOAD_DIR = 'downloads'
