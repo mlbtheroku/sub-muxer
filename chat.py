@@ -24,11 +24,7 @@ To give custom name to file send it with url seperated with |
 
 <a href="www.google.co.uk">Repo URL</a>"""
 
-    NO_AUTH_USER = "This is a Telegram Bot to Mux subtitle into a video
-
-<b>Send me a Telegram file to begin</b>
-
-/help for more details.."
+    NO_AUTH_USER = "This is a Telegram Bot to Mux subtitle into a video"
     DOWNLOAD_SUCCESS = """File downloaded successfully!
 
 Time taken : {} seconds."""
