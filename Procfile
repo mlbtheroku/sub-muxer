@@ -1,1 +1,1 @@
-worker: python3 muxbot.py
+worker: python3 app.py & python3 muxbot.py
